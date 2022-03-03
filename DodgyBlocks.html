@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodgy Blocks</title>
+        <style>
+            @import url("http://fonts.googleapis.com/css?family=Press+Start+2P");
+            body {
+                display: block;
+                margin: 0;
+                padding: 0;
+                font-family: 'Press Start 2P', cursive;
+                font-size: 1vw;
+            }
+            canvas {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+            }
+            #score {
+                position: absolute;
+                top: 2vh;
+                left: 2vw;
+                color: #FFFFFF;
+            }
+            #highscore {
+                position: absolute;
+                top: 2vh;
+                left: 96vw;
+                color: #44FF44;
+            }
+            #restart {
+                position: absolute;
+                top: 50vh;
+                left: 50%;
+                margin-left: -14vw;
+                color: #FFFFFF;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="game"></canvas>
+        <p id="score">0</p>
+        <p id="highscore">0</p>
+        <p id="restart">Press Space to start the game.</p>
+        <script src="BuckScript.js"></script>
+        <script src="DodgyBlocks.js"></script>
+    </body>
+</html>
